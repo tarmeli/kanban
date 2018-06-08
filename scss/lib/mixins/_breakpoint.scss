@@ -1,0 +1,7 @@
+// Set breakpoint on wanted width
+// e. g. at 60em
+@mixin breakpoint($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}

@@ -1,0 +1,25 @@
+.form {
+  &__control {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5em;
+    outline: 0;
+    border: 1px solid &black;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    box-shadow: 0;
+    margin: 0 0 5px 0;
+
+    &--text {
+      height: 2rem;
+      padding: 1em 0.5em;
+    }
+
+    &--textarea {
+      height: 7.5em;
+      resize: vertical;
+    }
+  }
+}

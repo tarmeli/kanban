@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+html {
+  @include font-size(17px);
+  height: 100%;
+}
+
+body {
+  @include font-family-main;
+  background-color: #f8f8f8;
+  color: $black;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img,
+media {
+  height: auto;
+  max-width: 100%;
+}

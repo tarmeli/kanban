@@ -1,0 +1,26 @@
+//
+// @file
+// This file includes all variables related to media queries
+//
+
+$tiny: 20em; // = 320px;
+$xsmall: 30em; // = 480px;
+$small: 37.5em; // = 600px;
+$medium: 40em; // = 640px;
+$large: 48em; // = 768px;
+$xlarge: 60em; // = 960px;
+$desktop: 75em; // = 1200px;
+
+// Adjust value of container
+$container: 84.5em; // = 1320px + 2 * 1rem
+
+$max-width-deduction: 0.0625em; // = 1px
+
+$mobile-font-size: 14px;
+$base-font-size: 16px;
+$spacing: 30px;
+
+// Wrapper
+$wrapper-width: 75em;
+$footer-height: 600px;
+$logo-size: 30px;

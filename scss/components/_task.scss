@@ -1,0 +1,103 @@
+.task {
+  margin: 5px;
+  border-radius: 5px;
+  padding: 0 10px;
+  border: 1px solid &black;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  box-shadow: 0;
+
+  &__title {
+    background: #eee;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2px;
+    border-radius: 0 5px 0 0;
+    margin: -1px -10px 0 -11px;
+    border-top: solid 1px #dbdbdb;
+
+    &[data-priority="0"] {
+      border-left: solid 8px #ffdfdf;
+    }
+    &[data-priority="1"] {
+      border-left: solid 8px #ffaaaa;
+    }
+    &[data-priority="2"] {
+      border-left: solid 8px #ff7d7d;
+    }
+    &[data-priority="3"] {
+      border-left: solid 8px #f74d4d;
+    }
+    &[data-priority="4"] {
+      border-left: solid 8px #f72828;
+    }
+    &[data-priority="5"] {
+      border-left: solid 8px #e40000;
+    }
+    &[data-priority="6"] {
+      border-left: solid 8px #a00000;
+    }
+    &[data-priority="7"] {
+      border-left: solid 8px #690101;
+    }
+    &[data-priority="8"] {
+      border-left: solid 8px #410000;
+    }
+    &[data-priority="9"] {
+      border-left: solid 8px #2e0000;
+    }
+  }
+
+  &__body {
+    font-size: 1rem;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+  }
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    background: #eee;
+    border-radius: 0 0 5px 5px;
+    margin: 0 -10px;
+    height: 2em;
+  }
+  &__footer-button {
+    width: 33.33%;
+    text-align: center;
+    cursor: pointer;
+    padding: 2px;
+    outline: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    &[disabled] {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  &__del {
+    color: $white;
+    background-color: $red;
+  }
+
+  &__date {
+    font-size: 9px;
+    margin: 0;
+    text-align: center;
+    margin: 0 -10px;
+
+    &--deadline {
+      background-color: $red;
+      color: $white;
+      font-size: 11px;
+    }
+
+    &--created {
+      color: rgba($color: #000000, $alpha: 0.5);
+    }
+  }
+}
